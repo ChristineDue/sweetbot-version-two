@@ -178,6 +178,7 @@ li{
 .medarbejder img{
 	width: 40%;
 	height: auto;
+	border: 3px solid red;
 }
 
 .medarbejder p{
