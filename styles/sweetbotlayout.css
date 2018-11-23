@@ -54,7 +54,7 @@ nav{
 .sloganKnap{
 	position: relative;
 	bottom: 470px;
-	left: 460px; 
+	left: 430px; 
 	padding: 8px 10px;
 	font-size: 1em;
 	font-weight: 600;
@@ -73,6 +73,38 @@ nav{
 	color: white;
 }
 
+.forsidetilbud{
+	margin: 10%;
+	margin-bottom: 40%;
+	display: flex;
+	text-align: center;
+}
+
+.forsidetilbud img{
+	max-width: 60%;
+	vertical-align: middle;
+
+}
+
+.forsidetilbud p{
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 25px;
+}
+
+.forsidetilbud a{
+	text-decoration: none;
+	color: #b5b2b0;
+	padding: 3%;
+	background: white;
+	border: 1px solid #7E7E7E;
+	border-radius: 4px;
+}
+
+.forsidetilbud a:hover{
+	background: #B5B2B0;
+	color: white;
+}
 /* Footer style */
 
 .footer{
@@ -157,14 +189,14 @@ li{
 }
 
 .kolonne a:hover{
-	background: #7E7E7E;
+	background: #B5B2B0;
 	color: white;
 }
 
-/*Om os style*/
+/*Kompetence style*/
 
-.kompetenceBox{
-	text-align: center;
+.kompetencebilleder img{
+	padding-bottom: 5%;
 }
 
 .medarbejder{
@@ -178,7 +210,6 @@ li{
 .medarbejder img{
 	width: 40%;
 	height: auto;
-	border: 3px solid red;
 }
 
 .medarbejder p{
@@ -191,35 +222,32 @@ li{
 	text-decoration: none;
 	color: #7E7E7E;
 	padding: 3%;
+	margin: 0 3%;
 	background: white;
 	border: 1px solid #7E7E7E;
 	border-radius: 4px;
 }
 
-.kolonne a:hover{
-	background: #7E7E7E;
+.medarbejder a:hover{
+	background: #B5B2B0;
 	color: white;
 }
 
-/*.kompetenceBillede img{
-	
-	text-align: inherit;
-	width: 10%;
-	height: auto;	
-}*/
-.lillebillede img{
-	width: 75%;
-	height: auto;
-	padding: 10px 0 10px 0;
+.kompetenceoverskift{
+	text-align: center;
+	font-size: 2em;
+	border-bottom: 1px solid grey;
+	padding-top: 7%;
 }
 
+.sofieogkasper{
+	margin-bottom: 7%;
+}
 /* Projekter style*/
 .projekttekst{
 	margin: 10%;
 	display: flex;
 	text-align: center;
-	
-	
 }
 
 .projektbillede img{
@@ -244,12 +272,12 @@ li{
 }
 
 .projekttekst a:hover{
-	background: #7E7E7E;
+	background: #B5B2B0;
 	color: white;
 }
 
 .projektlinje{
-	background: #B5B2B0;
+	border: 2px solid #B5B2B0;
 }
 
 .burgerMenu { /* Normal: Skjul burger menu*/
