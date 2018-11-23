@@ -1,0 +1,501 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+/* navigation og logo style*/
+
+.logo{
+	padding: 73px 73px 73px 0;
+	max-width: 100%;
+	}
+
+nav{
+	font-size: 180%;
+}
+
+.navmenu{
+	padding: 22% 5% 0 0;
+}
+
+.navmenu a{
+	padding: 0 15px 0 15px;
+	text-decoration: none;
+	color: black;
+}
+
+.navmenu .currentpage{
+	color: #3D6BB4;
+}
+/* Forside style*/
+
+.forsidebillede{
+	max-width: 100%;
+	opacity: 0.75;
+}
+
+
+.slogan h2{
+	font-size: 2.5em;
+	position: relative;
+	bottom: 500px;
+	right: 120px;
+	text-align: center;
+	text-shadow: 1px 1px grey;
+}
+
+.sloganKnap{
+	position: relative;
+	bottom: 470px;
+	left: 460px; 
+	padding: 8px 10px;
+	font-size: 1em;
+	font-weight: 600;
+	border-radius: 4px;
+	background: white;
+	opacity: 0.85;
+	text-decoration: none;
+	color: black;
+}
+
+.sloganKnap:hover{
+	background: #B5B2B0;
+	opacity: 1;	
+}
+.sloganKnap:hover{
+	color: white;
+}
+
+/* Footer style */
+
+.footer{
+	background: #b5b2b0;
+	max-width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	margin-bottom: 5%;
+}
+
+ul{
+	list-style-type: none;
+	color: white;
+	font-weight: 700;
+	margin-top: 12%;
+}
+
+li{
+	padding: 3%;
+}
+
+.kontaktKnap{
+	text-decoration: none;
+	color: white;
+}
+.kontaktKnap:hover{
+	color: #3d6bb4;
+}
+
+.mapbund{
+	height:auto;
+	width: 30%;
+	padding: 20px;
+}
+
+.fa {
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+	color: white;
+	font-size: 50px;
+	position: relative;
+	margin-top: 58%;
+}
+.adresseSmall{
+	display: none;
+}
+
+/*Services styles*/
+.hotbotLogo{
+	width: 100%;
+	height: auto;
+}
+
+.kolonne{
+	padding: 15% 10% 10% 10%;
+	display: flex;
+	margin: 10px;
+	text-align: center;
+	
+}
+
+.kolonne img{
+	width: 40%;
+	height: auto;
+}
+
+.kolonne p{
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 25px;
+}
+
+.kolonne a{
+	text-decoration: none;
+	color: #7E7E7E;
+	padding: 3%;
+	background: white;
+	border: 1px solid #7E7E7E;
+	border-radius: 4px;
+}
+
+.kolonne a:hover{
+	background: #7E7E7E;
+	color: white;
+}
+
+/*Om os style*/
+
+.kompetenceBox{
+	text-align: center;
+}
+
+.medarbejder{
+	padding: 15% 10% 10% 10%;
+	display: flex;
+	margin: 10px;
+	text-align: center;
+	
+}
+
+.medarbejder img{
+	width: 40%;
+	height: auto;
+}
+
+.medarbejder p{
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 25px;
+}
+
+.medarbejder a{
+	text-decoration: none;
+	color: #7E7E7E;
+	padding: 3%;
+	background: white;
+	border: 1px solid #7E7E7E;
+	border-radius: 4px;
+}
+
+.kolonne a:hover{
+	background: #7E7E7E;
+	color: white;
+}
+
+/*.kompetenceBillede img{
+	
+	text-align: inherit;
+	width: 10%;
+	height: auto;	
+}*/
+.lillebillede img{
+	width: 75%;
+	height: auto;
+	padding: 10px 0 10px 0;
+}
+
+/* Projekter style*/
+.projekttekst{
+	margin: 10%;
+	display: flex;
+	text-align: center;
+	
+	
+}
+
+.projektbillede img{
+	max-width: 100%;
+	margin: 10%;
+	vertical-align: middle;
+}
+
+.projekttekst p{
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 25px;
+}
+
+.projekttekst a{
+	text-decoration: none;
+	color: #b5b2b0;
+	padding: 3%;
+	background: white;
+	border: 1px solid #7E7E7E;
+	border-radius: 4px;
+}
+
+.projekttekst a:hover{
+	background: #7E7E7E;
+	color: white;
+}
+
+.projektlinje{
+	background: #B5B2B0;
+}
+
+.burgerMenu { /* Normal: Skjul burger menu*/
+		display: none;
+	}
+
+/*Kontakt style*/
+
+.kontaktbox{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.contact-form{
+	text-align: center;
+	
+}
+.form-control{
+	width: 80%;
+	line-height: 20px;
+	margin: 2%;
+	padding: 2%;
+	border: none;
+	border-bottom: 1px solid black;
+	font-family: 'Lato', sans-serif;
+}
+textarea{
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+.submit{
+	width: 30%;
+	border: none;
+	border-radius: 4px;
+}
+
+.ceo{
+	text-align: center;
+}
+.ceo img{
+	width: 50%;
+	height: auto;
+	padding-bottom: 10%;
+}
+
+/*så man stopper udviklingen af skærmen når den bliver for bred - låser layoutet ved 1200 px*/
+/* en media query "indlejret" i dette stylesheet*/
+
+@media screen and (min-width: 1200px){
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+@media handheld, only screen and (max-width: 768px) and (min-width: 414px){
+	nav{
+		font-size: 130%;
+	}
+	
+	.navmenu a{
+		padding: 22% 4% 0 0;
+	}
+	.navmenu{
+		margin-left: 18%;
+		margin-top: 12%;
+	}
+	
+	.slogan h2{
+		bottom: 350px;
+		font-size: 2em;
+	}
+	
+	.sloganKnap{
+		bottom: 300px;
+	}
+	
+	.mapbund{
+		display: none;
+	}
+	.kompetenceBillede img{
+		width: 30%;
+		height: auto;
+	}
+	.lillebillede img{
+		width: 70%;
+		height: auto;
+	}
+	
+/*Projekter style*/
+	.projektbillede img{
+		width: 80%;
+		margin-top: 35%;
+	}
+	.projektlinje{
+		text-align: center;
+	}
+	
+/*footer style*/	
+
+	.adresseSmall{
+		display: flex;
+	}
+	
+	.adresseLarge{
+		display: none;
+	}
+	.fa, .fa a{
+		margin-top: 0%;
+		padding: 0 2%;
+	}
+	.footer{
+		max-width: 100%;
+		margin: 0 auto; 
+		margin-bottom: 5%;
+	}
+
+	
+/*Om os style*/
+	
+	.medarbejder{
+	padding: 0;
+	}
+/*Kontaktstyle*/
+	
+	.kontaktbox{
+		margin-top: 0;
+		margin-bottom: 10%;
+	}
+	.kontaktbilleder{
+		margin-top: 10%;
+		width: 100%;
+	}
+}
+
+@media handheld, only screen and (max-width: 414px) and (min-width:1px){
+
+	.logo{
+	padding: 36.5px 36.5px 36.5px 0;
+	max-width: 100%;
+}
+	
+/*Burgermenu og dropdown style*/
+	
+	.burgerMenu {
+    	display: inline-block;
+    	cursor: pointer;
+	}
+	
+	.burgerMenu a {
+		display: none;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+	
+	.change a {
+		display: inline-block;
+	}
+
+	
+	.change .linksburgermenu, .burgerPunkt{
+		background: #b5b2b0;
+		text-decoration: none;
+		color: white;
+		padding-right: 10px;
+		width: 100%;
+		font-size: 1.15em;
+	}
+	
+	.change a{
+		padding: 5px;
+	}
+	.change .linksburgermenu,.bar1, .bar2, .bar3{
+		position: relative;
+		top: 35px;
+		left: 50px;
+	}
+	
+
+	
+/*Normal menubar bliver skjult her*/
+	
+	.navmenu{
+		display: none;
+	}
+	
+	.slogan, .sloganKnap{
+		display: none;
+	}
+
+	.kompetenceBox h1{
+		font-size: 0.75em;
+	}
+
+/*projekt style*/
+	.projektbillede img{
+		display: none;
+	}
+	
+	.projekttekst{
+		font-size: 0.75em;
+		line-height: normal;
+		margin: 5%;
+	}
+	
+/*Om os style*/
+	
+	.lillebillede img{
+	width: 75%;
+	height: auto;
+	padding: 0;
+	}
+	
+	.medarbejder{
+	padding: 0;
+	}
+/*Footer style small*/
+	
+	.adresseSmall{
+		display: flex;
+	}
+	
+	.adresseLarge{
+		display: none;
+	}
+	.fa, .fa a{
+		margin-top: 0%;
+		padding: 0 2%;
+	}
+	
+}

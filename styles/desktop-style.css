@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.header{
+	display: flex;
+}
+
+.logo{
+	height: 219px;
+	width: 40%;
+	display: inline;
+}
+.logo img{
+	padding: 73px 73px 73px 0;
+	
+	display: inline;
+}
+
+.forsidebillede{
+	width: 50%;
+	height: 300px;
+
+}
+.forsidebillede img{
+	height: 714px;
+	width: auto;
+	position: relative;
+	margin-left: 15px;
+	opacity: 0.5;
+}
+
+h1{
+	font-size: 2.5em;
+	position: relative;
+	bottom: 150px;
+	left: 300px;
+	text-shadow: 1px 1px grey;
+}
+
+button{
+	position: relative;
+	bottom: 130px;
+	left: 460px;
+	padding: 8px 10px;
+	font-size: 1em;
+	font-weight: 600;
+	border-radius: 4px;
+	background: white;
+	opacity: 0.85;
+	
+}
+button:hover{
+	background: #7E7E7E;
+	opacity: 1;	
+}
+.knap:hover{
+	color: white;
+}
+nav{
+	height: 219px;
+	width: 50%;
+	font-size: 27px;
+	
+	line-height: 270px;
+	
+}
+
+
+.topnav {
+	border-radius: 4px;
+	margin-top: 30px;
+}
+
+a{
+	padding: 0 15px 0 15px;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	text-align: center;
+}
+
+.bund{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin-top: 300px;
+	border: 1px solid red;
+	width: 1185px;
+	margin-left: 15px;
+	background: #7E7E7E;
+}
+
+ul{
+	list-style-type: none;
+	color: white;
+	position: relative;
+	margin-left: 60px;
+	margin-top: 100px;
+	padding: 30px;
+	width: 300px;
+	
+}
+
+li{
+	padding: 5px;
+	
+}
+.mapbund{
+	height:300px;
+	width: auto;
+	padding: 10px;
+	position: relative;
+}
+/*Services styles*/
+.indholdservice{
+	border: 1px solid blue;
+	display: flex;
+	margin: 10px;
+	
+}
+
+.kolonne{
+	border: 1px solid red;
+	display: flex;
+	margin: 10px;
+}
+
+h1{
+	font-size: 30px;
+}
+
+/*SoMe style*/
+.some{
+	margin-top: 180px;
+	width: 33.3%;
+}
+
+.fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+	color: white;
+	font-size: 50px;
+}
+
+/*så man stopper udviklingen af skærmen når den bliver for bred - låser layoutet ved 1200 px*/
+/* en media query "indlejret" i dette stylesheet*/
+
+@media screen and (min-width: 1200px){
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}

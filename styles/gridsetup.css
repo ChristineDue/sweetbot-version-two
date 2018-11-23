@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+[class*='grid'],
+[class*='large-'],
+[class*='medium-'],
+[class*='small-'],
+.grid:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+[class*='large-'] {
+	float: left;
+  	min-height: 1px;
+	padding-right: 0px; /* column-space */
+}
+
+[class*='large-'] [class*='large-']:last-child {
+	padding-right: 0;
+}
+
+.grid {
+	width: 100%;
+	max-width: 1140px;
+	min-width: 748px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-pad {
+	padding-top: 20px;
+	padding-left: 20px; /* grid-space to left */
+	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+.push-right {
+	float: right;
+}
+
+@media screen and (min-width: 1200px){
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+/* Large layout content*/
+
+.large-1-1 {
+	width: 100%;
+}
+.large-2-3, .large-8-12 {
+	width: 66.66%;
+}
+
+.large-1-2, .large-6-12 {
+	width: 50%;
+}
+
+.large-1-3, .large-4-12 {
+	width: 33.33%;
+}
+
+.large-1-4, .large-3-12 {
+	width: 25%;
+}
+
+.large-1-5 {
+	width: 20%;
+}
+
+.large-1-6, .large-2-12 {
+	width: 16.667%;
+}
+
+.large-1-7 {
+	width: 14.28%;
+}
+
+.large-1-8 {
+	width: 12.5%;
+}
+
+.large-1-9 {
+	width: 11.1%;
+}
+
+.large-1-10 {
+	width: 10%;
+}
+
+.large-1-11 {
+	width: 9.09%;
+}
+
+.large-1-12 {
+	width: 8.33%
+}
+
+/* Large Layout Columns */
+
+.large-11-12 {
+	width: 91.66%
+}
+
+.large-10-12 {
+	width: 83.333%;
+}
+
+.large-9-12 {
+	width: 75%;
+}
+
+.large-5-12 {
+	width: 41.66%;
+}
+
+.large-7-12 {
+	width: 58.33%
+}
+
+.hide-on-large {
+		display: none !important;
+		width: 0;
+		height: 0;
+	}
+/* Pushing blocks */
+
+.push-2-3, .push-8-12 {
+	margin-left: 66.66%;
+}
+
+.push-1-2, .push-6-12 {
+	margin-left: 50%;
+}
+
+.push-1-3, .push-4-12 {
+	margin-left: 33.33%;
+}
+
+.push-1-4, .push-3-12 {
+	margin-left: 25%;
+}
+
+.push-1-5 {
+	margin-left: 20%;
+}
+
+.push-1-6, .push-2-12 {
+	margin-left: 16.667%;
+}
+
+.push-1-7 {
+	margin-left: 14.28%;
+}
+
+.push-1-8 {
+	margin-left: 12.5%;
+}
+
+.push-1-9 {
+	margin-left: 11.1%;
+}
+
+.push-1-10 {
+	margin-left: 10%;
+}
+
+.push-1-11 {
+	margin-left: 9.09%;
+}
+
+.push-1-12 {
+	margin-left: 8.33%
+}
+
+@media handheld, only screen and (max-width: 768px) {
+	.grid {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 20px; /* grid-space to left */
+		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+	}
+
+	[class*='large-'] {
+		width: auto;
+		float: none;
+		margin: 10px 0;
+		padding-left: 0;
+		padding-right: 10px; /* column-space */
+	}
+
+	[class*='large-'] [class*='large-'] {
+		padding-right: 0;
+	}
+
+	/* Medium Layout */
+
+	[class*='medium-'] {
+		float: left;
+		margin: 0 0 10px;
+		padding-left: 0;
+		padding-right: 10px; /* column-space */
+		padding-bottom: 0;
+	}
+
+	.medium-1-1 {
+		width: 100%;
+	}
+	.medium-2-3, .medium-8-12 {
+		width: 66.66%;
+	}
+
+	.medium-1-2, .medium-6-12 {
+		width: 50%;
+	}
+
+	.medium-1-3, .medium-4-12 {
+		width: 33.33%;
+	}
+
+	.medium-1-4, .medium-3-12 {
+		width: 25%;
+	}
+
+	.medium-1-5 {
+		width: 20%;
+	}
+
+	.medium-1-6, .medium-2-12 {
+		width: 16.667%;
+	}
+
+	.medium-1-7 {
+		width: 14.28%;
+	}
+
+	.medium-1-8 {
+		width: 12.5%;
+	}
+
+	.medium-1-9 {
+		width: 11.1%;
+	}
+
+	.medium-1-10 {
+		width: 10%;
+	}
+
+	.medium-1-11 {
+		width: 9.09%;
+	}
+
+	.medium-1-12 {
+		width: 8.33%
+	}
+
+	/* medium Layout Columns */
+
+	.medium-11-12 {
+		width: 91.66%
+	}
+
+	.medium-10-12 {
+		width: 83.333%;
+	}
+
+	.medium-9-12 {
+		width: 75%;
+	}
+
+	.medium-5-12 {
+		width: 41.66%;
+	}
+
+	.medium-7-12 {
+		width: 58.33%
+	}
+
+	.hide-on-medium {
+		display: none !important;
+		width: 0;
+		height: 0;
+	}
+}
+
+@media handheld, only screen and (max-width: 375px) {
+	.grid {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 20px; /* grid-space to left */
+		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+	}
+
+	[class*='medium-'] {
+		width: auto;
+		float: none;
+		margin: 10px 0;
+		padding-left: 0;
+		padding-right: 10px; /* column-space */
+	}
+
+	[class*='medium-'] [class*='medium-'] {
+		padding-right: 0;
+	}
+
+	/* Small Layout */
+
+	[class*='small-'] {
+		float: left;
+		margin: 0 0 10px;
+		padding-left: 0;
+		padding-right: 10px; /* column-space */
+		padding-bottom: 0;
+	}
+
+	.small-1-1 {
+		width: 100%;
+	}
+	.small-2-3, .small-8-12 {
+		width: 66.66%;
+	}
+
+	.small-1-2, .small-6-12 {
+		width: 50%;
+	}
+
+	.small-1-3, .small-4-12 {
+		width: 33.33%;
+	}
+
+	.small-1-4, .small-3-12 {
+		width: 25%;
+	}
+
+	.small-1-5 {
+		width: 20%;
+	}
+
+	.small-1-6, .small-2-12 {
+		width: 16.667%;
+	}
+
+	.small-1-7 {
+		width: 14.28%;
+	}
+
+	.small-1-8 {
+		width: 12.5%;
+	}
+
+	.small-1-9 {
+		width: 11.1%;
+	}
+
+	.small-1-10 {
+		width: 10%;
+	}
+
+	.small-1-11 {
+		width: 9.09%;
+	}
+
+	.small-1-12 {
+		width: 8.33%
+	}
+
+	/* small Layout Columns */
+
+	.small-11-12 {
+		width: 91.66%
+	}
+
+	.small-10-12 {
+		width: 83.333%;
+	}
+
+	.small-9-12 {
+		width: 75%;
+	}
+
+	.small-5-12 {
+		width: 41.66%;
+	}
+
+	.small-7-12 {
+		width: 58.33%
+	}
+
+	.hide-on-small {
+		display: none !important;
+		width: 0;
+		height: 0;
+	}
+}
